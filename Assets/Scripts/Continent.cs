@@ -7,7 +7,7 @@ public class Continent : MonoBehaviour
 
 
     public string continentName;
-    public GameManager gm;
+    // public GameManager gm;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,7 @@ public class Continent : MonoBehaviour
         // Debug.Log("Mouse is over GameObject.");
         if (Input.GetMouseButtonDown(0))
         {
-            gm.SelectContinent("Afrikka");
+            // gm.SelectContinent("Afrikka");
         }
     }
 }
