@@ -1,0 +1,20 @@
+# Sisältääkö suunnitelma olennaiset asiat?
+ - Pelin kulku on hyvin kuvattu ja siitä saa selkeän kuvan
+ - Graafiikat ja audiot on mietitty, sekä mistä ne saadaan
+ - Suunnitelmassa on kuvattu myös mitä pelin on tarkoitus opettaa
+ - Minimivaatimukset ovat melko selkeästi tiedossa, ja niiden pitäisi olla toteutettavissa
+
+# Puuttuuko jotain?
+ - Mitä sitten tapahtuu jos mato on kasvanut jo niin pitkäksi että ruudulla on enää kolme paikkaa tai vähemmän jäljellä, voiko pelin siis läpäistä?
+ - Minkälaisesta poolista kirjoitusmerkit valitaan? Arvotaanko ne satunnaisesti kaikista tarjolla olevista, voiko poolia muuttaa jollain tavalla, vai kasvaako pooli pelin edetessä?
+ - Miten merkit vaihtuvat sen jälkeen kun yhden on syönyt, vaihtuvatko kaikki vai lisätäänkö kartalle yksi merkki lisää?
+
+# Onko suunnittelupäätökset perusteltu?
+ - Suunnittelupäätöksien perustelussa on hyödynnetty tieteellisiä lähteitä. Esim. japanin opiskelun toisteisuus ja sitä myöten mahdollinen tylsistyminen on huomioitu, ja siihen ehdotettu yksinkertaista mutta toimivaa peliratkaisua.
+
+# Parannusehdotuksia
+ - Kun mato syö oikean merkin niin "nomnomnom" -äänen sijaan kuuluisi merkin ääntämys. Äänteet voisi mahdollisesti löytyä jostain äänipankista valmiina
+ - Vaihtoehtoisesti kun pelaaja on syönyt merkin ja siitä ilmoitettu joko "omnomnom" tai -äänella pelaajalla toistettaisiin uuden haettavan merkin ääntämys
+
+# Muuta
+ - Todella hyvä idea opetuspeliksi! Yksinkertainen mutta koukuttava
