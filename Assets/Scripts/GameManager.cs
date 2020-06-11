@@ -32,9 +32,4 @@ public class GameManager : MonoBehaviour
         cm.GetContinentInfo(continent);
     }
 
-
-    void update()
-    {
-
-    }
 }
