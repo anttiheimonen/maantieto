@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class ContinentManager : MonoBehaviour
 {
-    public static ContinentManager continentManager;
+    public ContinentManager afrikka;
 
-    private void Awake()
+
+    public string GetContinentInfo(string continent)
     {
-        continentManager = this;
+        return "GetContinentInfo ei ole vielä valmis";
     }
 
-
-    public GameObject afrikka;
 }
