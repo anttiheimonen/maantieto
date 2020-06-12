@@ -7,7 +7,7 @@ public class ContinentManager : MonoBehaviour
     public ContinentManager afrikka;
 
 
-    public string GetContinentInfo(string continent)
+    public string GetContinentInfo(string tag)
     {
         return "GetContinentInfo ei ole vielä valmis";
     }
