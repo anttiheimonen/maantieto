@@ -1,21 +1,23 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using UnityEngine;
+
 
 
 [DataContract]
 public class ContinentData
 {
     [DataMember]
-    private string tag;
+    private string tag = "";
 
     [DataMember]
-    private string continentName;
+    private string continentName = "";
 
     [DataMember]
-    private CountryData[] countriesArray;
+    private CountryData[] countries = new CountryData[0];
 
-    private Dictionary<string, CountryData> countries;
+    private Dictionary<string, CountryData> countriesDic;
 
     private int numberOfCountries;
 
@@ -24,12 +26,11 @@ public class ContinentData
     /// get by tag.
     public void Initialize()
     {
-        countries = new Dictionary<string, CountryData>();
-        numberOfCountries = countriesArray.Length;
-
-        foreach (var c in countriesArray)
+        countriesDic = new Dictionary<string, CountryData>();
+        numberOfCountries = countries.Length;
+        foreach (var c in countries)
         {
-            countries.Add(c.GetTag(), c);
+            countriesDic.Add(c.GetTag(), c);
         }
     }
 
@@ -44,5 +45,13 @@ public class ContinentData
 
 
     public Dictionary<string, CountryData> GetCountries() =>
-        countries;
+        countriesDic;
+
+
+    public CountryData GetRandomCountry()
+    {
+        System.Random rnd = new System.Random();
+        int idx = rnd.Next(0, numberOfCountries);
+        return countries[idx];
+    }
 }

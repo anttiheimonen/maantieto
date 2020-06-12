@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Continent : MonoBehaviour
+public class ContinentController : MonoBehaviour
 {
 
     public string continentName;
