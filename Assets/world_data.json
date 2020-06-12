@@ -1,31 +1,33 @@
 {
-    "africa": {
-        "name": "Africa",
-        "countries": {
-            "egypt": {
-                "name": "Egypti",
-                "hints": [
-                    "Täällä on paljon hiekkaa",
-                    "Pyramidit ovat tämän maan tunnettu nähtävyys",
-                    "Tämä on egyptin kolmas vinkki"
-                ]
-            },
-            "southafrica": {
-                "name": "Etelä-Afrikka",
-                "hints": [
-                    "Etelä-Afrikka vinkki 1",
-                    "Etelä-Afrikka vinkki 2",
-                    "Etelä-Afrikka vinkki 3"
-                ]
-            },
-            "ivorycoast": {
-                "name": "Norsunluurannikko",
-                "hints": [
-                    "Norsunluurannikko vinkki 1",
-                    "Norsunluurannikko vinkki 2",
-                    "Norsunluurannikko vinkki 3"
-                ]
-            }
+    "tag": "africa",
+    "continentName": "Africa",
+    "countries": [
+        {
+            "tag": "egypt",
+            "countryName": "Egypti",
+            "hints": [
+                "Täällä on paljon hiekkaa",
+                "Pyramidit ovat tämän maan tunnettu nähtävyys",
+                "Tämä on egyptin kolmas vinkki"
+            ]
+        },
+        {
+            "tag": "southafrica",
+            "countryName": "Etelä-Afrikka",
+            "hints": [
+                "Etelä-Afrikka vinkki 1",
+                "Etelä-Afrikka vinkki 2",
+                "Etelä-Afrikka vinkki 3"
+            ]
+        },
+        {
+            "tag": "ivorycoast",
+            "countryName": "Norsunluurannikko",
+            "hints": [
+                "Norsunluurannikko vinkki 1",
+                "Norsunluurannikko vinkki 2",
+                "Norsunluurannikko vinkki 3"
+            ]
         }
-    }
+    ]
 }
