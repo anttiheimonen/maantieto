@@ -1,22 +1,33 @@
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
-            }
+    "tag": "africa",
+    "continentName": "Africa",
+    "countries": [
+        {
+            "tag": "egypt",
+            "countryName": "Egypti",
+            "hints": [
+                "Täällä on paljon hiekkaa",
+                "Pyramidit ovat tämän maan tunnettu nähtävyys",
+                "Tämä on egyptin kolmas vinkki"
+            ]
+        },
+        {
+            "tag": "southafrica",
+            "countryName": "Etelä-Afrikka",
+            "hints": [
+                "Etelä-Afrikka vinkki 1",
+                "Etelä-Afrikka vinkki 2",
+                "Etelä-Afrikka vinkki 3"
+            ]
+        },
+        {
+            "tag": "ivorycoast",
+            "countryName": "Norsunluurannikko",
+            "hints": [
+                "Norsunluurannikko vinkki 1",
+                "Norsunluurannikko vinkki 2",
+                "Norsunluurannikko vinkki 3"
+            ]
         }
-    }
+    ]
 }
