@@ -13,27 +13,29 @@ public class ChangeCamera : MonoBehaviour
     // TODO: call this when starting the game
     public void ToMainScreen()
     {
+        // Changes camera view point
         Debug.Log("Changed camera view to MainScreen");
         CameraManager.instance.questionScreen.enabled = false;
         CameraManager.instance.continentsScreen.enabled = true;
 
         UIManager.instance.ClearQuestionBox();
 
-        // TODO: this is still test stuff
+        // Deactivates game view title
+        // UIManager.instance.gameViewTitle.enabled = false;
         UIManager.instance.testinappi.SetActive(true);
-        UIManager.instance.UpdateTitle("Valitse maanosa");
-        UIManager.instance.continentTitle.enabled = false;
+        UIManager.instance.UpdateUiTitle("Valitse maanosa");
+        UIManager.instance.UpdateGameViewTitle("Maapallo");
     }
 
-    public void ToContinentScreen()
+    public void ToAfricaScreen()
     {
+        // Changes camera view point
         Debug.Log("Changed camera view to QuestionScreen");
         CameraManager.instance.questionScreen.enabled = true;
         CameraManager.instance.continentsScreen.enabled = false;
 
-        // TODO: this is still test stuff
         UIManager.instance.testinappi.SetActive(false);
-        UIManager.instance.UpdateTitle("Arvaa valtio");
-        UIManager.instance.UpdateContinenTitle("Maanosan nimi");
+        UIManager.instance.UpdateUiTitle("Arvaa valtio");
+        UIManager.instance.UpdateGameViewTitle("Afrikka");
     }
 }

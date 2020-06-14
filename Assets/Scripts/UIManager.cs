@@ -19,9 +19,9 @@ public class UIManager : MonoBehaviour
         question.text = "";
         Debug.Log("Cleared questionbox");
     }
-    public void UpdateTitle(string newTitle)
+    public void UpdateUiTitle(string newTitle)
     {
-        title.text = newTitle;
+        uiTitle.text = newTitle;
     }
 
     public void UpdateQuestion(string newQuestion)
@@ -29,14 +29,14 @@ public class UIManager : MonoBehaviour
         question.text = newQuestion;
     }
 
-    public void UpdateContinenTitle(string newContinentTitle)
+    public void UpdateGameViewTitle(string newContinentTitle)
     {
-        continentTitle.enabled = true;
-        continentTitle.text = newContinentTitle;
+        gameViewTitle.enabled = true;
+        gameViewTitle.text = newContinentTitle;
     }
 
     public TextMeshProUGUI question;
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI continentTitle;
+    public TextMeshProUGUI uiTitle;
+    public TextMeshProUGUI gameViewTitle;
     public GameObject testinappi;
 }
