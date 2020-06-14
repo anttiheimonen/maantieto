@@ -10,6 +10,6 @@ public class CameraManager : MonoBehaviour
         instance = this;
     }
     public Camera questionScreen;
-    public Camera test;
+    public Camera continentsScreen;
 
 }

@@ -10,7 +10,7 @@ public class NextQuestion : MonoBehaviour
         int questionNumber = RandomNumber();
         Debug.Log("Randomised question " + questionNumber);
 
-        UIManager.instance.questionBox.text = "Question: " + questionNumber;
+        UIManager.instance.UpdateQuestion("Question: " + questionNumber);
     }
 
     private int RandomNumber()
