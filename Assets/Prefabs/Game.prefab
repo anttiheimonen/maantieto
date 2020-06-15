@@ -270,6 +270,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3385655395718134518}
     m_Modifications:
+    - target: {fileID: 1376523613, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GiveHint
+      objectReference: {fileID: 0}
     - target: {fileID: 2468440293946947779, guid: 838b95c158d352a2ab9723f4d6189340,
         type: 3}
       propertyPath: m_LocalPosition.x
