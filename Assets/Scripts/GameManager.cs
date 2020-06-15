@@ -30,10 +30,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void OnDestroy()
-    {
-        Debug.Log("TUHOITAAN GM instanssi");
-    }
 
     void Start()
     {
@@ -58,6 +54,13 @@ public class GameManager : MonoBehaviour
     public void SelectCountry(string tag)
     {
         Debug.Log("Country selected " + tag);
+    }
+
+
+    private void StartQuiz()
+    {
+        CountryData lookingFor = cm.GetRandomCountryData();
+        // TODO: Kesken
     }
 
 
