@@ -13,6 +13,12 @@ public class GameManager : MonoBehaviour
 
     private GameState gamestate;
 
+    private CountryData lookingFor;
+
+    private int points = 0;
+
+    private UIManager ui;
+
 
     void Awake()
     {
@@ -34,7 +40,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         cm = new ContinentManager(); // gameObject.AddComponent(typeof(ContinentManager)) as ContinentManager;
+        ui = FindObjectOfType<UIManager>();
         Debug.Log(cm.Debugaa());
+
+        // Debugging stuff
+        SelectContinent("africa");
+        StartQuiz();
     }
 
 
@@ -61,14 +72,41 @@ public class GameManager : MonoBehaviour
 
     private bool GuessCountry(string tag)
     {
+        Debug.Log(lookingFor.GetTag());
+        if (tag == lookingFor.GetTag())
+        {
+            RightAnswer();
+            return true;
+        }
 
-        return true;
+        WrongAnswer();
+        return false;
+    }
+
+
+    private void RightAnswer()
+    {
+        GivePoints(5);
+        Debug.Log("GAMEMANAGER OIKEIN");
+        ui.RightAnswer(lookingFor.GetName());
+    }
+
+
+    private void WrongAnswer()
+    {
+
+    }
+
+
+    private void GivePoints(int pts)
+    {
+        points = points + pts;
     }
 
 
     private void StartQuiz()
     {
-        CountryData lookingFor = cm.GetRandomCountryData();
+        lookingFor = cm.GetRandomCountryData();
         Debug.Log("Looking for " + lookingFor.GetTag());
         var hintStack = new Stack<string>(lookingFor.GetHints());
         Debug.Log(hintStack.Pop());

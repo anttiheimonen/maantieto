@@ -8,6 +8,7 @@ public class CountryController : MonoBehaviour
     private void OnMouseDown()
     {
         string country = gameObject.name;
+        Debug.Log("Valittu maa " + country);
         GameManager.Instance.SelectCountry(country);
         // Debug.Log("Clicked " + gameObject.name);
         // TODO: fix at some point
