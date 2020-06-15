@@ -8,6 +8,16 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
+    public TextMeshProUGUI hint;
+
+    public TextMeshProUGUI uiTitle;
+
+    public TextMeshProUGUI gameViewTitle;
+
+    public GameObject testinappi;
+
+    public GameObject btnNextQuestion;
+
     private string hintLineChange = "";
 
     private void Awake()
@@ -52,10 +62,4 @@ public class UIManager : MonoBehaviour
         gameViewTitle.text = newContinentTitle;
     }
 
-
-    public TextMeshProUGUI hint;
-    public TextMeshProUGUI uiTitle;
-    public TextMeshProUGUI gameViewTitle;
-    public GameObject testinappi;
-    public GameObject btnNextQuestion;
 }
