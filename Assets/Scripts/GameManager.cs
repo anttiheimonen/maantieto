@@ -45,10 +45,6 @@ public class GameManager : MonoBehaviour
         cm = new ContinentManager(); // gameObject.AddComponent(typeof(ContinentManager)) as ContinentManager;
         ui = FindObjectOfType<UIManager>();
         Debug.Log(cm.Debugaa());
-
-        // Debugging stuff
-        // SelectContinent("africa");
-        // StartQuiz();
     }
 
 
@@ -58,7 +54,7 @@ public class GameManager : MonoBehaviour
         selectedContinent = tag;
         cm.LoadContinentData(tag);
         gamestate = GameState.QuizRunning;
-        StartQuiz();
+        InitializeQuiz();
     }
 
 
@@ -89,6 +85,7 @@ public class GameManager : MonoBehaviour
         GivePoints(5);
         Debug.Log("GAMEMANAGER OIKEIN");
         ui.RightAnswer(lookingFor.GetName());
+        gamestate = GameState.QuizEnd;
     }
 
 
@@ -108,6 +105,7 @@ public class GameManager : MonoBehaviour
         }
         catch (InvalidOperationException e)
         {
+            e.ToString();
             Debug.Log("Vinkit loppu :(");
         }
         ui.UpdateQuestion(hint);
@@ -120,7 +118,14 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void StartQuiz()
+    /// Start new game after previous
+    public void NewGame()
+    {
+        InitializeQuiz();
+    }
+
+
+    private void InitializeQuiz()
     {
         lookingFor = cm.GetRandomCountryData();
         Debug.Log("Looking for " + lookingFor.GetTag());
