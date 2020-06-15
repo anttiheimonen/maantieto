@@ -42,7 +42,7 @@ public class CountryController : MonoBehaviour
     private void WrongCountry()
     {
         ChangeColorToRed();
-        UIManager.instance.UpdateAnswerFeedBack("Väärin");
+        // UIManager.instance.UpdateAnswerFeedBack("Väärin");
         GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.wrongAnswer);
         Invoke("ChangeColorToWhite", 1f);
     }
@@ -51,7 +51,7 @@ public class CountryController : MonoBehaviour
     private void RightCountry()
     {
         ChangeColorToGreen();
-        UIManager.instance.UpdateAnswerFeedBack("Oikein!");
+        // UIManager.instance.UpdateAnswerFeedBack("Oikein!");
         GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.rightAnswer);
 
         Invoke("ChangeColorToWhite", 3f);
