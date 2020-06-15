@@ -8,7 +8,7 @@ public class CountryController : MonoBehaviour
     private void OnMouseDown()
     {
         string country = gameObject.name;
-        Debug.Log("Valittu maa " + country);
+        // Debug.Log("Valittu maa " + country);
         GameManager.Instance.SelectCountry(country);
         // Debug.Log("Clicked " + gameObject.name);
         // TODO: fix at some point
@@ -42,6 +42,8 @@ public class CountryController : MonoBehaviour
     private void WrongCountry()
     {
         ChangeColorToRed();
+        UIManager.instance.UpdateAnswerFeedBack("Väärin");
+        GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.wrongAnswer);
         Invoke("ChangeColorToWhite", 1f);
     }
 
@@ -49,6 +51,9 @@ public class CountryController : MonoBehaviour
     private void RightCountry()
     {
         ChangeColorToGreen();
-        // Invoke("ChangeColorToWhite", 1f);
+        UIManager.instance.UpdateAnswerFeedBack("Oikein!");
+        GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.rightAnswer);
+
+        Invoke("ChangeColorToWhite", 3f);
     }
 }

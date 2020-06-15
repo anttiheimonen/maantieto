@@ -53,9 +53,22 @@ public class UIManager : MonoBehaviour
     }
 
 
+    public void UpdateAnswerFeedBack(string newFeedBack)
+    {
+        answerFeedback.text = newFeedBack;
+    }
+
+
+    public void ClearAnswerFeedBack()
+    {
+        UpdateAnswerFeedBack("");
+    }
+
+
     public TextMeshProUGUI hint;
     public TextMeshProUGUI uiTitle;
     public TextMeshProUGUI gameViewTitle;
+    public TextMeshProUGUI answerFeedback;
     public GameObject testinappi;
     public GameObject btnNextQuestion;
 }

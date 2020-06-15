@@ -12,7 +12,6 @@ public class ChangeCamera : MonoBehaviour
         ToMainScreen();
         startDone = true;
     }
-    // TODO: call this when starting the game
     public void ToMainScreen()
     {
         // Changes camera view point
@@ -21,6 +20,7 @@ public class ChangeCamera : MonoBehaviour
         CameraManager.instance.continentsScreen.enabled = true;
 
         UIManager.instance.ClearQuestionBox();
+        UIManager.instance.ClearAnswerFeedBack();
 
         // Deactivates game view title
         // UIManager.instance.gameViewTitle.enabled = false;
@@ -36,6 +36,8 @@ public class ChangeCamera : MonoBehaviour
     {
         // Changes camera view point
         // Debug.Log("Changed camera view to QuestionScreen");
+        UIManager.instance.ClearAnswerFeedBack();
+
         CameraManager.instance.questionScreen.enabled = true;
         CameraManager.instance.continentsScreen.enabled = false;
 
@@ -51,7 +53,8 @@ public class ChangeCamera : MonoBehaviour
     {
         if (startDone)
         {
-            GameManager.Instance.GetComponent<AudioSource>().PlayOneShot(SoundManager.instance.changeCamera);
+            // GameManager.Instance.GetComponent<AudioSource>().PlayOneShot(SoundManager.instance.changeCamera);
+            GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.changeCamera);
         }
     }
 }
