@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
         Debug.Log(cm.Debugaa());
 
         // Debugging stuff
-        SelectContinent("africa");
-        StartQuiz();
+        // SelectContinent("africa");
+        // StartQuiz();
     }
 
 
