@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3765822525114245576}
   - component: {fileID: 3765822525114245577}
   - component: {fileID: 3765822525114245578}
+  - component: {fileID: 1140156591}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -58,7 +59,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb45153c73fadce6824013912716bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 0}
+  hint: {fileID: 0}
   uiTitle: {fileID: 0}
   gameViewTitle: {fileID: 0}
   testinappi: {fileID: 0}
+  btnNextQuestion: {fileID: 0}
+--- !u!114 &1140156591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3765822525114245583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 932f186f8b8075b829f048b13cebada9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

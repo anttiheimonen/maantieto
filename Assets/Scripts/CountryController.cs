@@ -10,6 +10,7 @@ public class CountryController : MonoBehaviour
         string country = gameObject.name;
         GameManager.Instance.SelectCountry(country);
         // Debug.Log("Clicked " + gameObject.name);
+        // TODO: fix at some point
         if (gameObject.name == "egypt")
         {
             RightCountry();
