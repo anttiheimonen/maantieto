@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     private UIManager ui;
 
+    private Stack<string> hintStack;
+
 
     void Awake()
     {
@@ -54,7 +56,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Selected continent: " + tag);
         selectedContinent = tag;
         cm.LoadContinentData(tag);
-        gamestate = GameState.QuizStarting;
+        gamestate = GameState.QuizRunning;
         StartQuiz();
     }
 
@@ -92,6 +94,13 @@ public class GameManager : MonoBehaviour
     private void WrongAnswer()
     {
         Debug.Log("Wrong answer");
+        GiveHint();
+    }
+
+
+    private void GiveHint()
+    {
+        ui.UpdateQuestion(hintStack.Pop());
     }
 
 
@@ -105,19 +114,21 @@ public class GameManager : MonoBehaviour
     {
         lookingFor = cm.GetRandomCountryData();
         Debug.Log("Looking for " + lookingFor.GetTag());
-        var hintStack = new Stack<string>(lookingFor.GetHints());
-        Debug.Log(hintStack.Pop());
-        // TODO: Kesken
+        hintStack = GetSuffledHints(lookingFor);
+        GiveHint();
     }
 
 
     /// Puts country hints into a stack in randomized order.
     private Stack<string> GetSuffledHints(CountryData country)
     {
-        var list = new List<string>(country.GetHints());
-        int n = list.Count;
+        // var list = new List<string>(country.GetHints());
+        // int n = list.Count;
+
+        var list = country.GetHints();
+        int n = country.GetHints().Length;
         System.Random rnd = new System.Random();
-        while (n > 1)
+        while (n > 0)
         {
             n--;
             int k = rnd.Next(n + 1);
