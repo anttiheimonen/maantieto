@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -100,7 +101,16 @@ public class GameManager : MonoBehaviour
 
     private void GiveHint()
     {
-        ui.UpdateQuestion(hintStack.Pop());
+        string hint = "";
+        try
+        {
+            hint = hintStack.Pop();
+        }
+        catch (InvalidOperationException e)
+        {
+            Debug.Log("Vinkit loppu :(");
+        }
+        ui.UpdateQuestion(hint);
     }
 
 
