@@ -16,6 +16,18 @@ public class UIManager : MonoBehaviour
     }
 
 
+    public void RightAnswer(string country)
+    {
+        Debug.Log("Oikea vastaus " + country);
+    }
+
+
+    public void WrongAnswer(string country)
+    {
+        Debug.Log("Väärä vastaus " + country);
+    }
+
+
     public void ClearQuestionBox()
     {
         hint.text = "";
