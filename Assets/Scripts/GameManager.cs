@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Selected continent: " + tag);
         selectedContinent = tag;
         cm.LoadContinentData(tag);
-        gamestate = GameState.AfricaMap;
-        if (gamestate == GameState.AfricaMap)
+        gamestate = GameState.QuizStarting;
+        if (gamestate == GameState.QuizStarting)
         {
             Debug.Log("jee");
         }
@@ -54,20 +54,59 @@ public class GameManager : MonoBehaviour
     public void SelectCountry(string tag)
     {
         Debug.Log("Country selected " + tag);
+        if (gamestate == GameState.QuizRunning)
+            GuessCountry(tag);
+    }
+
+
+    private bool GuessCountry(string tag)
+    {
+
+        return true;
     }
 
 
     private void StartQuiz()
     {
         CountryData lookingFor = cm.GetRandomCountryData();
+        Debug.Log("Looking for " + lookingFor.GetTag());
+        var hintStack = new Stack<string>(lookingFor.GetHints());
+        Debug.Log(hintStack.Pop());
         // TODO: Kesken
+    }
+
+
+    /// Puts country hints into a stack in randomized order.
+    private Stack<string> GetSuffledHints(CountryData country)
+    {
+        var list = new List<string>(country.GetHints());
+        int n = list.Count;
+        System.Random rnd = new System.Random();
+        while (n > 1)
+        {
+            n--;
+            int k = rnd.Next(n + 1);
+            var value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+        var hintStack = new Stack<string>();
+
+        foreach (var hint in list)
+        {
+            hintStack.Push(hint);
+        }
+        return hintStack;
     }
 
 
     enum GameState
     {
         WorldMap,
-        AfricaMap
+        QuizStarting,
+        QuizRunning,
+        QuizEnd
+
     }
 
 }
