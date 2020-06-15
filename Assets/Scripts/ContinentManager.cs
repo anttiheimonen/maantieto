@@ -36,6 +36,12 @@ public class ContinentManager // : MonoBehaviour
     }
 
 
+    public CountryData GetRandomCountryData()
+    {
+        return continentData.GetRandomCountry();
+    }
+
+
     public string Debugaa()
     {
         return "CM instanssissta";
