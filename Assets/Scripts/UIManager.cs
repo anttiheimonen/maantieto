@@ -38,17 +38,20 @@ public class UIManager : MonoBehaviour
         uiTitle.text = newTitle;
     }
 
+
     public void UpdateQuestion(string newHint)
     {
         hint.text = hint.text + hintLineChange + newHint;
         hintLineChange = "\n";
     }
 
+
     public void UpdateGameViewTitle(string newContinentTitle)
     {
         gameViewTitle.enabled = true;
         gameViewTitle.text = newContinentTitle;
     }
+
 
     public TextMeshProUGUI hint;
     public TextMeshProUGUI uiTitle;

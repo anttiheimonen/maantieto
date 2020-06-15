@@ -28,6 +28,7 @@ public class ContinentData
     {
         countriesDic = new Dictionary<string, CountryData>();
         numberOfCountries = countries.Length;
+        Debug.Log("Maita:" + numberOfCountries);
         foreach (var c in countries)
         {
             countriesDic.Add(c.GetTag(), c);
@@ -52,6 +53,7 @@ public class ContinentData
     {
         System.Random rnd = new System.Random();
         int idx = rnd.Next(0, numberOfCountries);
+        Debug.Log("Palautetaan Random maa index: " + idx);
         return countries[idx];
     }
 }
