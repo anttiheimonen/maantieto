@@ -10,6 +10,12 @@ public class ContinentManager // : MonoBehaviour
     public ContinentData continentData;
 
 
+    public void ChangeCountryColor()
+    {
+
+    }
+
+
     public string GetContinentInfo(string tag)
     {
         return "GetContinentInfo ei vielä valmis";
