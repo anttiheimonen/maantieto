@@ -164,6 +164,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 95299817, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 208.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 95299817, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -417
+      objectReference: {fileID: 0}
+    - target: {fileID: 509671558, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
+      propertyPath: m_Name
+      value: PanelHints
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101537982, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
+      propertyPath: m_Name
+      value: HintsText
+      objectReference: {fileID: 0}
     - target: {fileID: 2139458389, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
       propertyPath: m_textAlignment
       value: 258
@@ -554,6 +570,11 @@ PrefabInstance:
       propertyPath: btnNextQuestion
       value: 
       objectReference: {fileID: 1376523611}
+    - target: {fileID: 3765822525114245578, guid: bde37440827377097b2120921d76a180,
+        type: 3}
+      propertyPath: hint
+      value: 
+      objectReference: {fileID: 1184664118}
     - target: {fileID: 3765822525114245583, guid: bde37440827377097b2120921d76a180,
         type: 3}
       propertyPath: m_Name

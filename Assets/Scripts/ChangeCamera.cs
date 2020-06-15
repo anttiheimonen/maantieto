@@ -14,7 +14,7 @@ public class ChangeCamera : MonoBehaviour
     public void ToMainScreen()
     {
         // Changes camera view point
-        Debug.Log("Changed camera view to MainScreen");
+        // Debug.Log("Changed camera view to MainScreen");
         CameraManager.instance.questionScreen.enabled = false;
         CameraManager.instance.continentsScreen.enabled = true;
 
@@ -31,7 +31,7 @@ public class ChangeCamera : MonoBehaviour
     public void ToAfricaScreen()
     {
         // Changes camera view point
-        Debug.Log("Changed camera view to QuestionScreen");
+        // Debug.Log("Changed camera view to QuestionScreen");
         CameraManager.instance.questionScreen.enabled = true;
         CameraManager.instance.continentsScreen.enabled = false;
 

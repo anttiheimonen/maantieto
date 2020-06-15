@@ -8,6 +8,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
+    private string hintLineChange = "";
+
     private void Awake()
     {
         instance = this;
@@ -16,17 +18,18 @@ public class UIManager : MonoBehaviour
 
     public void ClearQuestionBox()
     {
-        question.text = "";
-        Debug.Log("Cleared questionbox");
+        hint.text = "";
+        // Debug.Log("Cleared questionbox");
     }
     public void UpdateUiTitle(string newTitle)
     {
         uiTitle.text = newTitle;
     }
 
-    public void UpdateQuestion(string newQuestion)
+    public void UpdateQuestion(string newHint)
     {
-        question.text = newQuestion;
+        hint.text = hint.text + hintLineChange + newHint;
+        hintLineChange = "\n";
     }
 
     public void UpdateGameViewTitle(string newContinentTitle)
@@ -35,7 +38,7 @@ public class UIManager : MonoBehaviour
         gameViewTitle.text = newContinentTitle;
     }
 
-    public TextMeshProUGUI question;
+    public TextMeshProUGUI hint;
     public TextMeshProUGUI uiTitle;
     public TextMeshProUGUI gameViewTitle;
     public GameObject testinappi;
