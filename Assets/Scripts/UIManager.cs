@@ -39,4 +39,5 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI uiTitle;
     public TextMeshProUGUI gameViewTitle;
     public GameObject testinappi;
+    public GameObject btnNextQuestion;
 }

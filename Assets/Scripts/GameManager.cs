@@ -44,11 +44,11 @@ public class GameManager : MonoBehaviour
 
     public void SelectContinent(string tag)
     {
-        Debug.Log(tag);
+        Debug.Log("Selected continent: " + tag);
         selectedContinent = tag;
         cm.LoadContinentData(tag);
-        gamestate = GameState.ContinentMap;
-        if (gamestate == GameState.ContinentMap)
+        gamestate = GameState.AfricaMap;
+        if (gamestate == GameState.AfricaMap)
         {
             Debug.Log("jee");
         }
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
     enum GameState
     {
         WorldMap,
-        ContinentMap
+        AfricaMap
     }
 
 }
