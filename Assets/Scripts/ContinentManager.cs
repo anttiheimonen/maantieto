@@ -28,11 +28,10 @@ public class ContinentManager // : MonoBehaviour
         FileStream fs = File.OpenRead(@"Assets/world_data.json");
         var ser = new DataContractJsonSerializer(typeof(ContinentData));
 
-        ContinentData conti = (ContinentData)ser.ReadObject(fs);
-        Debug.Log("tidot ladattu");
-        // Debug.Break();
+        continentData = (ContinentData)ser.ReadObject(fs);
+        Debug.Log("tiedot ladattu");
         // continentData.GetNumberOfCountries();
-        conti.Initialize();
+        continentData.Initialize();
     }
 
 
@@ -44,6 +43,7 @@ public class ContinentManager // : MonoBehaviour
 
     public CountryData GetRandomCountryData()
     {
+        Debug.Log("Palautetaan random maa...");
         return continentData.GetRandomCountry();
     }
 

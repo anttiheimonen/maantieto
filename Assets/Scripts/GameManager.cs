@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
         Debug.Log(cm.Debugaa());
 
         // Debugging stuff
-        SelectContinent("africa");
-        StartQuiz();
+        // SelectContinent("africa");
+        // StartQuiz();
     }
 
 
@@ -55,10 +55,7 @@ public class GameManager : MonoBehaviour
         selectedContinent = tag;
         cm.LoadContinentData(tag);
         gamestate = GameState.QuizStarting;
-        if (gamestate == GameState.QuizStarting)
-        {
-            Debug.Log("jee");
-        }
+        StartQuiz();
     }
 
 
@@ -94,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     private void WrongAnswer()
     {
-
+        Debug.Log("Wrong answer");
     }
 
 
