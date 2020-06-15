@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour
 
     private string hintLineChange = "";
 
+
     private void Awake()
     {
         instance = this;
@@ -28,13 +29,13 @@ public class UIManager : MonoBehaviour
 
     public void RightAnswer(string country)
     {
-        Debug.Log("Oikea vastaus " + country);
+        UpdateQuestion(country + " on oikea vastaus!");
     }
 
 
     public void WrongAnswer(string country)
     {
-        Debug.Log("Väärä vastaus " + country);
+        UpdateQuestion(country + " ei ole oikea vastaus!");
     }
 
 
@@ -43,6 +44,8 @@ public class UIManager : MonoBehaviour
         hint.text = "";
         // Debug.Log("Cleared questionbox");
     }
+
+
     public void UpdateUiTitle(string newTitle)
     {
         uiTitle.text = newTitle;
