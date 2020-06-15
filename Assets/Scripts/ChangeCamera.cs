@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ChangeCamera : MonoBehaviour
 {
+    private bool startDone = false;
 
     private void Start()
     {
         // TODO: Find this a better place at some point
         ToMainScreen();
+        startDone = true;
     }
     // TODO: call this when starting the game
     public void ToMainScreen()
@@ -26,6 +28,8 @@ public class ChangeCamera : MonoBehaviour
         UIManager.instance.testinappi.SetActive(true);
         UIManager.instance.UpdateUiTitle("Valitse maanosa");
         UIManager.instance.UpdateGameViewTitle("Maapallo");
+
+        PlaySound();
     }
 
     public void ToAfricaScreen()
@@ -39,5 +43,15 @@ public class ChangeCamera : MonoBehaviour
         UIManager.instance.testinappi.SetActive(false);
         UIManager.instance.UpdateUiTitle("Arvaa valtio");
         UIManager.instance.UpdateGameViewTitle("Afrikka");
+
+        PlaySound();
+    }
+
+    private void PlaySound()
+    {
+        if (startDone)
+        {
+            GameManager.Instance.GetComponent<AudioSource>().PlayOneShot(SoundManager.instance.changeCamera);
+        }
     }
 }
