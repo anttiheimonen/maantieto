@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SoundController : MonoBehaviour
 {
-    public void PlayScreenChange()
+
+    public void PlaySound(AudioClip sound)
     {
-        gameObject.GetComponent<AudioSource>().PlayOneShot(SoundManager.instance.changeCamera);
+        gameObject.GetComponent<AudioSource>().PlayOneShot(sound);
     }
 }

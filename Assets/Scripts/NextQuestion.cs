@@ -8,7 +8,7 @@ public class NextQuestion : MonoBehaviour
     {
         // TODO: implement
         int questionNumber = RandomNumber();
-        Debug.Log("Randomised hint " + questionNumber);
+        // Debug.Log("Randomised hint " + questionNumber);
 
         UIManager.instance.UpdateQuestion("Hint: " + questionNumber);
     }

@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI gameViewTitle;
 
+    public TextMeshProUGUI answerFeedback;
+
     public GameObject testinappi;
 
     public GameObject btnNextQuestion;
@@ -63,6 +65,18 @@ public class UIManager : MonoBehaviour
     {
         gameViewTitle.enabled = true;
         gameViewTitle.text = newContinentTitle;
+    }
+
+
+    public void UpdateAnswerFeedBack(string newFeedBack)
+    {
+        answerFeedback.text = newFeedBack;
+    }
+
+
+    public void ClearAnswerFeedBack()
+    {
+        UpdateAnswerFeedBack("");
     }
 
 }

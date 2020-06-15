@@ -121,136 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1140156590 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6637142438154550142, guid: 5f44dcb25396b6232bb89ca80940213a,
+--- !u!114 &227092230 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6637142437929196557, guid: 5f44dcb25396b6232bb89ca80940213a,
     type: 3}
   m_PrefabInstance: {fileID: 6637142438007925245}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1140156591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140156590}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1acd5ad26c3398d1b43a6c8805af14e, type: 3}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonClick: {fileID: 8300000, guid: 6532181a062f400b4be0e9a42dccd83d, type: 3}
-  rightAnswer: {fileID: 8300000, guid: 94797bccdcfee3deeb43a3beefe0c677, type: 3}
-  wrongAnswer: {fileID: 8300000, guid: 582d1170d251b4d1ebf4ce7234ea0e03, type: 3}
-  changeCamera: {fileID: 8300000, guid: c2bada80bd11621109440240a8db629a, type: 3}
---- !u!114 &1140156595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140156590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 257e8cc779e17b67ca78197d5b131376, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &1140156596
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140156590}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &6637142438007925245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -318,6 +200,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6637142437929196559, guid: 5f44dcb25396b6232bb89ca80940213a,
+        type: 3}
+      propertyPath: m_Name
+      value: AnswerFeedBackText
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637142438154550139, guid: 5f44dcb25396b6232bb89ca80940213a,
+        type: 3}
+      propertyPath: answerFeedback
+      value: 
+      objectReference: {fileID: 227092230}
     - target: {fileID: 9104717964173675033, guid: 5f44dcb25396b6232bb89ca80940213a,
         type: 3}
       propertyPath: m_LocalPosition.z
