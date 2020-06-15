@@ -29,7 +29,6 @@ public class ContinentManager // : MonoBehaviour
         var ser = new DataContractJsonSerializer(typeof(ContinentData));
 
         continentData = (ContinentData)ser.ReadObject(fs);
-        Debug.Log("tiedot ladattu");
         // continentData.GetNumberOfCountries();
         continentData.Initialize();
     }
@@ -43,7 +42,6 @@ public class ContinentManager // : MonoBehaviour
 
     public CountryData GetRandomCountryData()
     {
-        Debug.Log("Palautetaan random maa...");
         return continentData.GetRandomCountry();
     }
 
