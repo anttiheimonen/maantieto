@@ -21,7 +21,9 @@ public class CountryController : MonoBehaviour
     {
         // Debug.Log("JEE");
         gameObject.transform.localScale = mouseOverScale;
-        ChangeColorToYellow();
+        // ChangeColorToYellow();
+        gameObject.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color
+                                                        + new Color(20, 20, 20, 0);
     }
 
 
