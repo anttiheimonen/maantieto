@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<todo version="0.1.20">
+    <note priority="high" time="1592232924" done="1592304704">
+        Add sound fx's
+    </note>
+    <note priority="veryhigh" time="1592304394">
+        Tähtimittari
+    </note>
+    <note priority="veryhigh" time="1592304561">
+        Maailmankartta fiksummin ruutuun
+    </note>
+    <note priority="veryhigh" time="1592304799">
+        Korjataan vinkit
+    </note>
+    <note priority="high" time="1592304413">
+        Pisteiden tallennus
+    </note>
+    <note priority="high" time="1592304442">
+        Seuraava maa napista alkaa alusta
+    </note>
+    <note priority="high" time="1592304465">
+        Lisää valtioita
+    </note>
+    <note priority="high" time="1592304511">
+        Sivupalkkiin enemmän tilaa
+    </note>
+    <note priority="high" time="1592304590">
+        Highlight valtioihin
+    </note>
+    <note priority="high" time="1592304843">
+        Toiseen valtioon vinkit
+    </note>
+    <note priority="medium" time="1592304531">
+        Sivupalkki siistimmäksi vinkkien osalta
+    </note>
+    <note priority="low" time="1592304689">
+        Mantereisiin painikkeet tähtimittareineen
+    </note>
+</todo>
