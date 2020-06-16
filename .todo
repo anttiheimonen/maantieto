@@ -3,6 +3,9 @@
     <note priority="veryhigh" time="1592304394" done="1592309170">
         Tähtimittari
     </note>
+    <note priority="veryhigh" time="1592304561" done="1592312547">
+        Maailmankartta fiksummin ruutuun
+    </note>
     <note priority="high" time="1592232924" done="1592304704">
         Add sound fx's
     </note>
@@ -12,11 +15,14 @@
             Palkkia levennetty 200 px
         </comment>
     </note>
+    <note priority="medium" time="1592306151" done="1592309492">
+        Paluunapille kuva
+        <comment>
+            Paluunapin kuvana perinteinen ruksi
+        </comment>
+    </note>
     <note priority="verylow" time="1592309471" done="1592309481">
         12
-    </note>
-    <note priority="veryhigh" time="1592304561">
-        Maailmankartta fiksummin ruutuun
     </note>
     <note priority="veryhigh" time="1592304799">
         Korjataan vinkit
@@ -30,20 +36,17 @@
     <note priority="high" time="1592304465">
         Lisää valtioita
     </note>
-    <note priority="high" time="1592304590">
+    <note priority="high" time="1592304590" done="1592312579">
         Highlight valtioihin
+        <comment>
+            Skaalaa valtion 1.2 kertaiseksi ja värjää keltaiseksi
+        </comment>
     </note>
     <note priority="high" time="1592304843">
         Toiseen valtioon vinkit
     </note>
     <note priority="medium" time="1592304531">
         Sivupalkki siistimmäksi vinkkien osalta
-    </note>
-    <note priority="medium" time="1592306151" done="1592309492">
-        Paluunapille kuva
-        <comment>
-            Paluunapin kuvana perinteinen ruksi
-        </comment>
     </note>
     <note priority="low" time="1592304689">
         Mantereisiin painikkeet tähtimittareineen

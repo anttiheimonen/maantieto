@@ -148,6 +148,7 @@ public class GameManager : MonoBehaviour
 
     private void InitializeQuestion()
     {
+        UIManager.instance.ClearQuestionBox();
         ClearContriesMarking();
         lookingFor = cm.GetRandomCountryData();
         gamestate = GameState.QuizRunning;
