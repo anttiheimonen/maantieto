@@ -45,6 +45,8 @@ public class UIManager : MonoBehaviour
     public void ClearQuestionBox()
     {
         hint.text = "";
+        hintLineChange = "";
+
         // Debug.Log("Cleared questionbox");
     }
 
