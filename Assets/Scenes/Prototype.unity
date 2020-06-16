@@ -148,6 +148,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.80792004
       objectReference: {fileID: 0}
+    - target: {fileID: 301024991568103379, guid: 5f44dcb25396b6232bb89ca80940213a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 301024991568103379, guid: 5f44dcb25396b6232bb89ca80940213a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Continent
+      objectReference: {fileID: 0}
     - target: {fileID: 1160466151526449460, guid: 5f44dcb25396b6232bb89ca80940213a,
         type: 3}
       propertyPath: m_Name
