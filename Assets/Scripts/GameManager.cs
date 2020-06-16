@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Selected continent: " + tag);
         selectedContinent = tag;
         cm.LoadContinentData(tag);
+        ui.InitializeScore(0, 0);
         gamestate = GameState.QuizRunning;
         InitializeQuestion();
     }
@@ -140,6 +141,7 @@ public class GameManager : MonoBehaviour
     private void GivePoints(int pts)
     {
         points = points + pts;
+        ui.SetScore(points);
     }
 
 
@@ -196,7 +198,6 @@ public class GameManager : MonoBehaviour
         QuizStarting,
         QuizRunning,
         QuizEnd
-
     }
 
 }

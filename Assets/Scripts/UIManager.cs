@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
 
     private string hintLineChange = "";
 
+    public StarBarController starBar;
+
 
     private void Awake()
     {
@@ -82,4 +84,15 @@ public class UIManager : MonoBehaviour
         UpdateAnswerFeedBack("");
     }
 
+
+    public void InitializeScore(int currentScore, int maxScore)
+    {
+        starBar.Initialize(currentScore, maxScore);
+    }
+
+
+    public void SetScore(int score)
+    {
+        starBar.SetScore(score);
+    }
 }
