@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CountryController : MonoBehaviour
 {
+    private Vector3 mouseOverScale = new Vector3(1.2f, 1.2f, 1.2f);
+
     private void OnMouseDown()
     {
         string country = gameObject.name;
@@ -12,6 +14,21 @@ public class CountryController : MonoBehaviour
         GameManager.Instance.SelectCountry(country);
         // Debug.Log("Clicked " + gameObject.name);
         // TODO: fix at some point
+    }
+
+
+    private void OnMouseOver()
+    {
+        // Debug.Log("JEE");
+        gameObject.transform.localScale = mouseOverScale;
+        ChangeColorToYellow();
+    }
+
+
+    private void OnMouseExit()
+    {
+        gameObject.transform.localScale = Vector3.one;
+        ChangeColorToWhite();
     }
 
 
@@ -29,6 +46,10 @@ public class CountryController : MonoBehaviour
             WrongCountry();
     }
 
+    private void ChangeColorToYellow()
+    {
+        gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+    }
 
     private void ChangeColorToRed()
     {
