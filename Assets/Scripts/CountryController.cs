@@ -12,18 +12,21 @@ public class CountryController : MonoBehaviour
         GameManager.Instance.SelectCountry(country);
         // Debug.Log("Clicked " + gameObject.name);
         // TODO: fix at some point
-        if (gameObject.name == "egypt")
-        {
-            RightCountry();
-            return;
-        }
-        WrongCountry();
     }
 
 
     public void ClearColorCoding()
     {
         ChangeColorToWhite();
+    }
+
+
+    public void AnswerIs(bool answer)
+    {
+        if (answer)
+            RightCountry();
+        else
+            WrongCountry();
     }
 
 
@@ -50,7 +53,7 @@ public class CountryController : MonoBehaviour
         ChangeColorToRed();
         UIManager.instance.UpdateAnswerFeedBack("Väärin");
         GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.wrongAnswer);
-        Invoke("ChangeColorToWhite", 1f);
+        // Invoke("ChangeColorToWhite", 1f);
     }
 
 
@@ -60,6 +63,6 @@ public class CountryController : MonoBehaviour
         UIManager.instance.UpdateAnswerFeedBack("Oikein!");
         GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.rightAnswer);
 
-        Invoke("ChangeColorToWhite", 3f);
+        // Invoke("ChangeColorToWhite", 3f);
     }
 }
