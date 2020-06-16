@@ -31,7 +31,17 @@ public class StarBarController : MonoBehaviour
         else
             slider.value = score;
 
-        Debug.Log(score);
+        int starCount = (int)(slider.value) / 20;
+
+        for (int i = 1; i <= starCount; i++)
+        {
+            string starName = "Star" + i;
+            Transform star = gameObject.transform.Find(starName);
+            if (star)
+            {
+                star.GetComponent<Image>().enabled = true;
+            }
+        }
     }
 
 }

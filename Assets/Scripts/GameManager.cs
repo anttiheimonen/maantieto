@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Selected continent: " + tag);
         selectedContinent = tag;
         cm.LoadContinentData(tag);
-        ui.InitializeScore(0, 0);
+        ui.InitializeScore(0, 100);
         gamestate = GameState.QuizRunning;
         InitializeQuestion();
     }
