@@ -27,8 +27,6 @@ public class ChangeCamera : MonoBehaviour
         // UIManager.instance.gameViewTitle.enabled = false;
         UIManager.instance.btnNextQuestion.SetActive(false);
         UIManager.instance.testinappi.SetActive(true);
-        UIManager.instance.stars.SetActive(false);
-
 
         UIManager.instance.UpdateUiTitle("Valitse maanosa");
         UIManager.instance.UpdateGameViewTitle("Maapallo");
@@ -48,7 +46,6 @@ public class ChangeCamera : MonoBehaviour
 
         UIManager.instance.btnNextQuestion.SetActive(true);
         UIManager.instance.testinappi.SetActive(false);
-        UIManager.instance.stars.SetActive(true);
 
         UIManager.instance.UpdateUiTitle("Arvaa valtio");
         UIManager.instance.UpdateGameViewTitle("Afrikka");

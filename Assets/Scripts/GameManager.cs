@@ -90,7 +90,6 @@ public class GameManager : MonoBehaviour
     private void RightAnswer()
     {
         GivePoints(5);
-        Debug.Log("GAMEMANAGER OIKEIN");
         ui.RightAnswer(lookingFor.GetName());
         gamestate = GameState.QuizEnd;
     }
@@ -168,9 +167,6 @@ public class GameManager : MonoBehaviour
     /// Puts country hints into a stack in randomized order.
     private Stack<string> GetSuffledHints(CountryData country)
     {
-        // var list = new List<string>(country.GetHints());
-        // int n = list.Count;
-
         var list = country.GetHints();
         int n = country.GetHints().Length;
         System.Random rnd = new System.Random();
