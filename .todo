@@ -33,7 +33,13 @@
     <note priority="medium" time="1592304531">
         Sivupalkki siistimmäksi vinkkien osalta
     </note>
+    <note priority="medium" time="1592306151">
+        Paluunapille kuva
+    </note>
     <note priority="low" time="1592304689">
         Mantereisiin painikkeet tähtimittareineen
+    </note>
+    <note priority="low" time="1592306172">
+        Seuraava kysymys -napille kuva
     </note>
 </todo>
