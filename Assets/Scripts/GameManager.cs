@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         selectedContinent = tag;
         cm.LoadContinentData(tag);
         gamestate = GameState.QuizRunning;
-        NewQuestion();
+        InitializeQuestion();
     }
 
 
@@ -140,10 +140,17 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void NewQuestion()
+    public void NewQuestion()
+    {
+        InitializeQuestion();
+    }
+
+
+    private void InitializeQuestion()
     {
         ClearContriesMarking();
         lookingFor = cm.GetRandomCountryData();
+        gamestate = GameState.QuizRunning;
         Debug.Log("Looking for " + lookingFor.GetTag());
         hintStack = GetSuffledHints(lookingFor);
         GiveHint();
