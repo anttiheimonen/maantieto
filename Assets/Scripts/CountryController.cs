@@ -21,6 +21,12 @@ public class CountryController : MonoBehaviour
     }
 
 
+    public void ClearColorCoding()
+    {
+        ChangeColorToWhite();
+    }
+
+
     private void ChangeColorToRed()
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
