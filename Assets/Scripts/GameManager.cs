@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         selectedContinent = tag;
         cm.LoadContinentData(tag);
         gamestate = GameState.QuizRunning;
-        InitializeQuiz();
+        NewQuestion();
     }
 
 
@@ -86,7 +86,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("GAMEMANAGER OIKEIN");
         ui.RightAnswer(lookingFor.GetName());
         gamestate = GameState.QuizEnd;
-        ClearContriesMarking();
     }
 
 
@@ -100,18 +99,15 @@ public class GameManager : MonoBehaviour
     /// Clear the color coding on contries
     private void ClearContriesMarking()
     {
-        GameObject cont = GameObject.Find("Africa");
         GameObject[] conts = GameObject.FindGameObjectsWithTag("Continent");
-        Debug.Log("Continents " + conts.Length);
         foreach (var c in conts)
         {
             var childs = c.GetComponentsInChildren(typeof(Transform));
-            Debug.Log("Countries " + childs.Length);
             foreach (var country in childs)
             {
                 if (country.tag != "Continent")
                 {
-                    Debug.Log(country.name);
+                    country.GetComponent<CountryController>().ClearColorCoding();
                 }
             }
         }
@@ -140,15 +136,9 @@ public class GameManager : MonoBehaviour
     }
 
 
-    /// Start new game after previous
-    public void NewGame()
+    private void NewQuestion()
     {
-        InitializeQuiz();
-    }
-
-
-    private void InitializeQuiz()
-    {
+        ClearContriesMarking();
         lookingFor = cm.GetRandomCountryData();
         Debug.Log("Looking for " + lookingFor.GetTag());
         hintStack = GetSuffledHints(lookingFor);
