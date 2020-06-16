@@ -12,18 +12,21 @@ public class CountryController : MonoBehaviour
         GameManager.Instance.SelectCountry(country);
         // Debug.Log("Clicked " + gameObject.name);
         // TODO: fix at some point
-        if (gameObject.name == "egypt")
-        {
-            RightCountry();
-            return;
-        }
-        WrongCountry();
     }
 
 
     public void ClearColorCoding()
     {
         ChangeColorToWhite();
+    }
+
+
+    public void AnswerIs(bool answer)
+    {
+        if (answer)
+            RightCountry();
+        else
+            WrongCountry();
     }
 
 

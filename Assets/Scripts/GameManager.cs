@@ -62,7 +62,11 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Country selected " + tag);
         if (gamestate == GameState.QuizRunning)
-            GuessCountry(tag);
+        {
+            bool answer = GuessCountry(tag);
+            GameObject c = GameObject.Find(tag);
+            c.GetComponent<CountryController>().AnswerIs(answer);
+        }
     }
 
 
