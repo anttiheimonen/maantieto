@@ -32,13 +32,13 @@ public class UIManager : MonoBehaviour
 
     public void RightAnswer(string country)
     {
-        UpdateQuestion(country + " on oikea vastaus!");
+        UpdateQuestion("\n" + country + " on oikea vastaus!");
     }
 
 
     public void WrongAnswer(string country)
     {
-        UpdateQuestion(country + " ei ole oikea vastaus!");
+        UpdateQuestion("\n" + country + " ei ole oikea vastaus!");
     }
 
 

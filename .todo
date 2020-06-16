@@ -9,10 +9,19 @@
     <note priority="high" time="1592232924" done="1592304704">
         Add sound fx's
     </note>
+    <note priority="high" time="1592304442" done="1592313948">
+        Seuraava maa napista alkaa alusta
+    </note>
     <note priority="high" time="1592304511" done="1592309421">
         Sivupalkkiin enemmän tilaa
         <comment>
             Palkkia levennetty 200 px
+        </comment>
+    </note>
+    <note priority="high" time="1592304590" done="1592312579">
+        Highlight valtioihin
+        <comment>
+            Skaalaa valtion 1.2 kertaiseksi ja värjää keltaiseksi
         </comment>
     </note>
     <note priority="medium" time="1592306151" done="1592309492">
@@ -30,17 +39,8 @@
     <note priority="high" time="1592304413">
         Pisteiden tallennus
     </note>
-    <note priority="high" time="1592304442">
-        Seuraava maa napista alkaa alusta
-    </note>
     <note priority="high" time="1592304465">
         Lisää valtioita
-    </note>
-    <note priority="high" time="1592304590" done="1592312579">
-        Highlight valtioihin
-        <comment>
-            Skaalaa valtion 1.2 kertaiseksi ja värjää keltaiseksi
-        </comment>
     </note>
     <note priority="high" time="1592304843">
         Toiseen valtioon vinkit
@@ -56,5 +56,8 @@
     </note>
     <note priority="verylow" time="1592309166">
         Tähtimittari toimimaan
+    </note>
+    <note priority="verylow" time="1592315823">
+        Bugi: jos vastaa väärin sen jälkeen kun kaikki vihjeet on jo saatu niin vihjeboksiin tulee ylimääräisiä rivinvaihtoja
     </note>
 </todo>

@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     private Stack<string> hintStack;
 
+    private int hintNumber = 0;
+
 
     void Awake()
     {
@@ -120,10 +122,11 @@ public class GameManager : MonoBehaviour
 
     private void GiveHint()
     {
+        hintNumber++;
         string hint = "";
         try
         {
-            hint = hintStack.Pop();
+            hint = "-- " + hintNumber + ". Vihje --\n" + hintStack.Pop();
         }
         catch (InvalidOperationException e)
         {
@@ -148,7 +151,9 @@ public class GameManager : MonoBehaviour
 
     private void InitializeQuestion()
     {
+        hintNumber = 0;
         UIManager.instance.ClearQuestionBox();
+        UIManager.instance.ClearAnswerFeedBack();
         ClearContriesMarking();
         lookingFor = cm.GetRandomCountryData();
         gamestate = GameState.QuizRunning;
