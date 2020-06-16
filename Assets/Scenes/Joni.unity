@@ -188,11 +188,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6637142438309614722, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReturnButtonLogic
-      objectReference: {fileID: 0}
     - target: {fileID: 9104717964173675033, guid: 5f44dcb25396b6232bb89ca80940213a,
         type: 3}
       propertyPath: m_LocalPosition.z

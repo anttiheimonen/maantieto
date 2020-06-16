@@ -1,10 +1,19 @@
 <?xml version="1.0"?>
 <todo version="0.1.20">
+    <note priority="veryhigh" time="1592304394" done="1592309170">
+        Tähtimittari
+    </note>
     <note priority="high" time="1592232924" done="1592304704">
         Add sound fx's
     </note>
-    <note priority="veryhigh" time="1592304394">
-        Tähtimittari
+    <note priority="high" time="1592304511" done="1592309421">
+        Sivupalkkiin enemmän tilaa
+        <comment>
+            Palkkia levennetty 200 px
+        </comment>
+    </note>
+    <note priority="verylow" time="1592309471" done="1592309481">
+        12
     </note>
     <note priority="veryhigh" time="1592304561">
         Maailmankartta fiksummin ruutuun
@@ -21,9 +30,6 @@
     <note priority="high" time="1592304465">
         Lisää valtioita
     </note>
-    <note priority="high" time="1592304511">
-        Sivupalkkiin enemmän tilaa
-    </note>
     <note priority="high" time="1592304590">
         Highlight valtioihin
     </note>
@@ -33,13 +39,19 @@
     <note priority="medium" time="1592304531">
         Sivupalkki siistimmäksi vinkkien osalta
     </note>
-    <note priority="medium" time="1592306151">
+    <note priority="medium" time="1592306151" done="1592309492">
         Paluunapille kuva
+        <comment>
+            Paluunapin kuvana perinteinen ruksi
+        </comment>
     </note>
     <note priority="low" time="1592304689">
         Mantereisiin painikkeet tähtimittareineen
     </note>
     <note priority="low" time="1592306172">
         Seuraava kysymys -napille kuva
+    </note>
+    <note priority="verylow" time="1592309166">
+        Tähtimittari toimimaan
     </note>
 </todo>
