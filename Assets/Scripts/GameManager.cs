@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("GAMEMANAGER OIKEIN");
         ui.RightAnswer(lookingFor.GetName());
         gamestate = GameState.QuizEnd;
+        ClearContriesMarking();
     }
 
 
@@ -93,6 +94,27 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Wrong answer");
         GiveHint();
+    }
+
+
+    /// Clear the color coding on contries
+    private void ClearContriesMarking()
+    {
+        GameObject cont = GameObject.Find("Africa");
+        GameObject[] conts = GameObject.FindGameObjectsWithTag("Continent");
+        Debug.Log("Continents " + conts.Length);
+        foreach (var c in conts)
+        {
+            var childs = c.GetComponentsInChildren(typeof(Transform));
+            Debug.Log("Countries " + childs.Length);
+            foreach (var country in childs)
+            {
+                if (country.tag != "Continent")
+                {
+                    Debug.Log(country.name);
+                }
+            }
+        }
     }
 
 
