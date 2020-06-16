@@ -30,6 +30,8 @@ public class StarBarController : MonoBehaviour
             slider.value = slider.maxValue;
         else
             slider.value = score;
+
+        Debug.Log(score);
     }
 
 }

@@ -19,7 +19,6 @@ public class UIManager : MonoBehaviour
     public GameObject testinappi;
 
     public GameObject btnNextQuestion;
-    public GameObject stars;
 
     private string hintLineChange = "";
 
