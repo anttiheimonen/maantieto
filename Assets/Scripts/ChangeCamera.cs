@@ -18,6 +18,7 @@ public class ChangeCamera : MonoBehaviour
         // Debug.Log("Changed camera view to MainScreen");
         CameraManager.instance.questionScreen.enabled = false;
         CameraManager.instance.continentsScreen.enabled = true;
+        CameraManager.instance.SetInMainScreen(true);
 
         UIManager.instance.ClearQuestionBox();
         UIManager.instance.ClearAnswerFeedBack();
@@ -26,6 +27,9 @@ public class ChangeCamera : MonoBehaviour
         // UIManager.instance.gameViewTitle.enabled = false;
         UIManager.instance.btnNextQuestion.SetActive(false);
         UIManager.instance.testinappi.SetActive(true);
+        UIManager.instance.stars.SetActive(false);
+
+
         UIManager.instance.UpdateUiTitle("Valitse maanosa");
         UIManager.instance.UpdateGameViewTitle("Maapallo");
 
@@ -40,9 +44,12 @@ public class ChangeCamera : MonoBehaviour
 
         CameraManager.instance.questionScreen.enabled = true;
         CameraManager.instance.continentsScreen.enabled = false;
+        CameraManager.instance.SetInMainScreen(false);
 
         UIManager.instance.btnNextQuestion.SetActive(true);
         UIManager.instance.testinappi.SetActive(false);
+        UIManager.instance.stars.SetActive(true);
+
         UIManager.instance.UpdateUiTitle("Arvaa valtio");
         UIManager.instance.UpdateGameViewTitle("Afrikka");
 
@@ -57,4 +64,19 @@ public class ChangeCamera : MonoBehaviour
             GameManager.Instance.GetComponent<SoundController>().PlaySound(SoundManager.instance.changeCamera);
         }
     }
+
+
+    public void ReturnButtonLogic()
+    {
+        if (!CameraManager.instance.InMainScreen())
+        {
+            ToMainScreen();
+        }
+        else
+        {
+            Debug.Log("Quitting");
+            Application.Quit();
+        }
+    }
+
 }

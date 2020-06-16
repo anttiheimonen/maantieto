@@ -188,45 +188,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082344, guid: 5f44dcb25396b6232bb89ca80940213a,
+    - target: {fileID: 6637142438309614722, guid: 5f44dcb25396b6232bb89ca80940213a,
         type: 3}
-      propertyPath: m_Name
-      value: NextCountryText
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082350, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_text
-      value: Seuraava valtio
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082350, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082350, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082350, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082350, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142436818082350, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6637142437607991169, guid: 5f44dcb25396b6232bb89ca80940213a,
-        type: 3}
-      propertyPath: m_Name
-      value: BtnNextCountry
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReturnButtonLogic
       objectReference: {fileID: 0}
     - target: {fileID: 9104717964173675033, guid: 5f44dcb25396b6232bb89ca80940213a,
         type: 3}
