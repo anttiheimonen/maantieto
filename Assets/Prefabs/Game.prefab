@@ -979,7 +979,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2019173975, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 600
+      value: 610
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019173975, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2019173976, guid: 838b95c158d352a2ab9723f4d6189340, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
