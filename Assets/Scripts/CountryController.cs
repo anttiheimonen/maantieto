@@ -18,14 +18,12 @@ public class CountryController : MonoBehaviour
         originalTitle = UIManager.instance.gameViewTitle.text;
     }
 
+
     private void OnMouseDown()
     {
         string country = gameObject.name;
-        // Debug.Log("Valittu maa " + country);
         GameManager.Instance.SelectCountry(country);
         originalColor = gameObject.GetComponent<SpriteRenderer>().color;
-        // Debug.Log("Clicked " + gameObject.name);
-        // TODO: fix at some point
     }
 
 
@@ -51,14 +49,14 @@ public class CountryController : MonoBehaviour
     private void OnMouseEnter()
     {
         originalTitle = UIManager.instance.gameViewTitle.text;
-        // TODO: Change this so that country name is fetched from json data
-        UIManager.instance.UpdateGameViewTitle(gameObject.name);
+        GameManager.Instance.DisplayCountryName(gameObject.name);
     }
 
 
     private void OnMouseExit()
     {
-        UIManager.instance.UpdateGameViewTitle(originalTitle);
+        GameManager.Instance.ClearCountryName();
+        // UIManager.instance.UpdateGameViewTitle(originalTitle);
         mouseOver = false;
         gameObject.transform.localScale = Vector3.one;
         // originalColor = gameObject.GetComponent<SpriteRenderer>().color;

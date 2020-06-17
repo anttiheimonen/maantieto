@@ -59,6 +59,19 @@ public class GameManager : MonoBehaviour
     }
 
 
+    public void DisplayCountryName(string tag)
+    {
+        Debug.Log(cm.GetCountryName(tag));
+        ui.UpdateGameViewTitle(cm.GetCountryName(tag));
+    }
+
+
+    public void ClearCountryName()
+    {
+        ui.UpdateGameViewTitle(cm.GetContinentName());
+    }
+
+
     public void SelectCountry(string tag)
     {
         Debug.Log("Country selected " + tag);

@@ -40,10 +40,21 @@ public class ContinentManager // : MonoBehaviour
     }
 
 
+    public string GetCountryName(string tag)
+    {
+        CountryData country;
+        continentData.GetCountries().TryGetValue(tag, out country);
+        return country.GetName();
+    }
+
+
     public CountryData GetRandomCountryData()
     {
         return continentData.GetRandomCountry();
     }
+
+
+    public string GetContinentName() => continentData.GetName();
 
 
     public CountryData GetRandomCountryDataWithHints()
