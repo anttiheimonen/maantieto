@@ -6,27 +6,38 @@
             "tag": "egypt",
             "countryName": "Egypti",
             "hints": [
-                "Täällä on paljon hiekkaa",
-                "Pyramidit ovat tämän maan tunnettu nähtävyys",
-                "Tämä on egyptin kolmas vinkki"
+                "Muinaisina aikoina tämän maan hallitsijoita kutsuttiin faaraoiksi.",
+                "Gizan Pyramidit ovat tämän maan tunnettu nähtävyys",
+                "Niili laskee tässä maassa välimereen.",
+                "Suezin kanava sijaisee tässä maassa."
             ]
         },
         {
             "tag": "southafrica",
             "countryName": "Etelä-Afrikka",
             "hints": [
-                "Etelä-Afrikka vinkki 1",
-                "Etelä-Afrikka vinkki 2",
-                "Etelä-Afrikka vinkki 3"
+                "Jalkapallon MM-kisat pelattiin tässä maassa vuonna 2010.",
+                "Nelson Mandela oli maan presidentti.",
+                "Tämä on Afrikan eteläisin valtio.",
+                "Hyväntoivonniemi sijaitsee tässä maassa."
             ]
         },
         {
             "tag": "ivorycoast",
             "countryName": "Norsunluurannikko",
             "hints": [
-                "Norsunluurannikko vinkki 1",
-                "Norsunluurannikko vinkki 2",
-                "Norsunluurannikko vinkki 3"
+                "Maa on maailman suurin kaakaon tuottaja.",
+                "Maan nimessä mainitaan eräs suuri maanisäkäs.",
+                "Maan pääkaupunki on Yamoussoukro."
+            ]
+        },
+        {
+            "tag": "madagascar",
+            "countryName": "Madagaskar",
+            "hints": [
+                "Tämä on Afrikan ainoa saarivaltio.",
+                "Maan luonto on ainutlaatuinen.",
+                "Tämän maan pingviineistä on tehty animaatiosarja."
             ]
         }
     ]
