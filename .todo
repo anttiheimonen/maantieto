@@ -39,19 +39,19 @@
     <note priority="verylow" time="1592309471" done="1592309481">
         12
     </note>
-    <note priority="veryhigh" time="1592304799">
+    <note priority="veryhigh" time="1592304799" done="1592395964">
         Korjataan vinkit
     </note>
-    <note priority="veryhigh" time="1592318441">
+    <note priority="veryhigh" time="1592318441" done="1592395966">
         Valtioille värit kuntoon arvauksen jälkeen
     </note>
     <note priority="high" time="1592304413">
         Pisteiden tallennus
     </note>
-    <note priority="high" time="1592304465">
+    <note priority="high" time="1592304465" done="1592395965">
         Lisää valtioita
     </note>
-    <note priority="high" time="1592304843">
+    <note priority="high" time="1592304843" done="1592395966">
         Toiseen valtioon vinkit
     </note>
     <note priority="low" time="1592304689">
@@ -60,7 +60,7 @@
     <note priority="low" time="1592389262">
         Bugi: oikean vastauksen jälkeen voi vielä vastata
     </note>
-    <note priority="verylow" time="1592309166">
+    <note priority="verylow" time="1592309166" done="1592395967">
         Tähtimittari toimimaan
     </note>
     <note priority="verylow" time="1592315823">
