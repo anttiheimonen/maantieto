@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
         UIManager.instance.ClearQuestionBox();
         UIManager.instance.ClearAnswerFeedBack();
         ClearContriesMarking();
-        lookingFor = cm.GetRandomCountryData();
+        lookingFor = cm.GetRandomCountryDataWithHints();
         gamestate = GameState.QuizRunning;
         Debug.Log("Looking for " + lookingFor.GetTag());
         hintStack = GetSuffledHints(lookingFor);

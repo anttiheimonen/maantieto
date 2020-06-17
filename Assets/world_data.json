@@ -42,7 +42,28 @@
         },
         {
             "tag": "kongo",
-            "countryName": "Kongo"
+            "countryName": "Kongo",
+            "hints": []
+        },
+        {
+            "tag": "namibia",
+            "countryName": "Namibia",
+            "hints": []
+        },
+        {
+            "tag": "chad",
+            "countryName": "Tšad",
+            "hints": []
+        },
+        {
+            "tag": "algeria",
+            "countryName": "Algeria",
+            "hints": []
+        },
+        {
+            "tag": "mali",
+            "countryName": "Mali",
+            "hints": []
         }
     ]
 }
