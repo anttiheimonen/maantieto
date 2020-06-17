@@ -22,6 +22,7 @@ public class ChangeCamera : MonoBehaviour
 
         UIManager.instance.ClearQuestionBox();
         UIManager.instance.ClearAnswerFeedBack();
+        UIManager.instance.starBar.gameObject.SetActive(false);
 
         // Deactivates game view title
         // UIManager.instance.gameViewTitle.enabled = false;
@@ -46,6 +47,7 @@ public class ChangeCamera : MonoBehaviour
 
         UIManager.instance.btnNextQuestion.SetActive(true);
         UIManager.instance.testinappi.SetActive(false);
+        UIManager.instance.starBar.gameObject.SetActive(true);
 
         UIManager.instance.UpdateUiTitle("Arvaa valtio");
         UIManager.instance.UpdateGameViewTitle("Afrikka");
