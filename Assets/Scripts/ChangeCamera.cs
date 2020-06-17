@@ -30,7 +30,7 @@ public class ChangeCamera : MonoBehaviour
         UIManager.instance.testinappi.SetActive(true);
 
         UIManager.instance.UpdateUiTitle("Valitse maanosa");
-        UIManager.instance.UpdateGameViewTitle("Maapallo");
+        UIManager.instance.UpdateGameViewTitle("Maailmankartta");
 
         PlaySound();
     }
