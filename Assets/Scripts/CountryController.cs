@@ -31,15 +31,7 @@ public class CountryController : MonoBehaviour
 
     private void OnMouseOver()
     {
-        // TextMeshProUGUI countryName = new TextMeshProUGUI();
-        // countryName.text = "jee";
-        // countryName.transform.position = gameObject.transform.position;
-        // Instantiate(countryName, gameObject.transform.position, Quaternion.identity);
-        if (UIManager.instance.gameViewTitle.text.Equals(originalTitle))
-        {
-            originalTitle = UIManager.instance.gameViewTitle.text;
-        }
-        UIManager.instance.UpdateGameViewTitle(gameObject.name);
+        // UIManager.instance.UpdateGameViewTitle(gameObject.name);
 
         if (!answered)
         {
@@ -53,6 +45,14 @@ public class CountryController : MonoBehaviour
                 = gameObject.GetComponent<SpriteRenderer>().color
                 * new Color(0.96f, 0.96f, 0.96f, 1f);
         }
+    }
+
+
+    private void OnMouseEnter()
+    {
+        originalTitle = UIManager.instance.gameViewTitle.text;
+        // TODO: Change this so that country name is fetched from json data
+        UIManager.instance.UpdateGameViewTitle(gameObject.name);
     }
 
 
