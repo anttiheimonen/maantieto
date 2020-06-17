@@ -33,6 +33,9 @@
             Paluunapin kuvana perinteinen ruksi
         </comment>
     </note>
+    <note priority="low" time="1592306172" done="1592318459">
+        Seuraava kysymys -napille kuva
+    </note>
     <note priority="verylow" time="1592309471" done="1592309481">
         12
     </note>
@@ -54,8 +57,8 @@
     <note priority="low" time="1592304689">
         Mantereisiin painikkeet tähtimittareineen
     </note>
-    <note priority="low" time="1592306172" done="1592318459">
-        Seuraava kysymys -napille kuva
+    <note priority="low" time="1592389262">
+        Bugi: oikean vastauksen jälkeen voi vielä vastata
     </note>
     <note priority="verylow" time="1592309166">
         Tähtimittari toimimaan
