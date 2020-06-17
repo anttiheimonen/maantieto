@@ -29,10 +29,8 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            DontDestroyOnLoad(gameObject);
             Debug.Log("luodaan GM instanssi");
             Instance = this;
-            // cm = new ContinentManager();
             gamestate = GameState.WorldMap;
         }
         else if (Instance != this)
