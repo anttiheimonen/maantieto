@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CountryController : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public class CountryController : MonoBehaviour
     private bool mouseOver;
     private Color originalColor;
     private bool answered;
+    private string originalTitle;
+
+
+    private void Start()
+    {
+        originalTitle = UIManager.instance.gameViewTitle.text;
+    }
 
     private void OnMouseDown()
     {
@@ -23,6 +31,16 @@ public class CountryController : MonoBehaviour
 
     private void OnMouseOver()
     {
+        // TextMeshProUGUI countryName = new TextMeshProUGUI();
+        // countryName.text = "jee";
+        // countryName.transform.position = gameObject.transform.position;
+        // Instantiate(countryName, gameObject.transform.position, Quaternion.identity);
+        if (UIManager.instance.gameViewTitle.text.Equals(originalTitle))
+        {
+            originalTitle = UIManager.instance.gameViewTitle.text;
+        }
+        UIManager.instance.UpdateGameViewTitle(gameObject.name);
+
         if (!answered)
         {
             if (!mouseOver)
@@ -40,6 +58,7 @@ public class CountryController : MonoBehaviour
 
     private void OnMouseExit()
     {
+        UIManager.instance.UpdateGameViewTitle(originalTitle);
         mouseOver = false;
         gameObject.transform.localScale = Vector3.one;
         // originalColor = gameObject.GetComponent<SpriteRenderer>().color;
