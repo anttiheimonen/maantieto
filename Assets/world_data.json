@@ -42,7 +42,8 @@
         },
         {
             "tag": "kongo",
-            "countryName": "Kongo"
+            "countryName": "Kongo",
+            "hints": []
         }
     ]
 }

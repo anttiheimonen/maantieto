@@ -48,7 +48,15 @@ public class ContinentManager // : MonoBehaviour
 
     public CountryData GetRandomCountryDataWithHints()
     {
-        return continentData.GetRandomCountry();
+        CountryData cd;
+        do
+        {
+            cd = continentData.GetRandomCountry();
+            Debug.Log(cd.GetHints().Length);
+        } while (cd.GetHints().Length < 1);
+
+        return cd;
+
     }
 
 
