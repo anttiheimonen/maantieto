@@ -39,6 +39,10 @@
                 "Maan luonto on ainutlaatuinen.",
                 "Tämän maan pingviineistä on tehty animaatiosarja."
             ]
+        },
+        {
+            "tag": "kongo",
+            "countryName": "Kongo"
         }
     ]
 }
