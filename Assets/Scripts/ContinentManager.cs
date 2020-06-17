@@ -52,11 +52,9 @@ public class ContinentManager // : MonoBehaviour
         do
         {
             cd = continentData.GetRandomCountry();
-            Debug.Log(cd.GetHints().Length);
         } while (cd.GetHints().Length < 1);
 
         return cd;
-
     }
 
 
