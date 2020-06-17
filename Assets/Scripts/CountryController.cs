@@ -50,6 +50,8 @@ public class CountryController : MonoBehaviour
     public void ClearColorCoding()
     {
         ChangeColorToWhite();
+        SetAnswered(false);
+        originalColor = Color.white;
     }
 
 
@@ -87,6 +89,12 @@ public class CountryController : MonoBehaviour
     private void ChangeColorTo(Color color)
     {
         gameObject.GetComponent<SpriteRenderer>().color = color;
+    }
+
+
+    public void SetAnswered(bool value)
+    {
+        answered = value;
     }
 
 
