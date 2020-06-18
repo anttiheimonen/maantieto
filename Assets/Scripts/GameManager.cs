@@ -52,7 +52,10 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Selected continent: " + tag);
         selectedContinent = tag;
-        cm.LoadContinentData(tag);
+        // cm.LoadContinentData(tag);
+        var jsonTextFile = Resources.Load<TextAsset>("world_data");
+        Debug.Log(jsonTextFile.ToString());
+        cm.LoadContinentDataFromSTring(jsonTextFile.ToString());
         ui.InitializeScore(0, 100);
         gamestate = GameState.QuizRunning;
         InitializeQuestion();

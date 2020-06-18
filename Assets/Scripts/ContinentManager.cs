@@ -25,10 +25,27 @@ public class ContinentManager // : MonoBehaviour
     /// Loads data of a continent from a file
     public void LoadContinentData(string tag)
     {
-        FileStream fs = File.OpenRead(@"Assets/world_data.json");
+        FileStream fs = File.OpenRead("Assets/world_data.json");
         var ser = new DataContractJsonSerializer(typeof(ContinentData));
 
         continentData = (ContinentData)ser.ReadObject(fs);
+        // continentData.GetNumberOfCountries();
+        continentData.Initialize();
+    }
+
+
+    public void LoadContinentDataFromSTring(string data)
+    {
+        // FileStream fs = File.OpenRead("Assets/world_data.json");
+        var ser = new DataContractJsonSerializer(typeof(ContinentData));
+
+        var stream = new MemoryStream();
+        var writer = new StreamWriter(stream);
+        writer.Write(data);
+        writer.Flush();
+        stream.Position = 0;
+
+        continentData = (ContinentData)ser.ReadObject(stream);
         // continentData.GetNumberOfCountries();
         continentData.Initialize();
     }
